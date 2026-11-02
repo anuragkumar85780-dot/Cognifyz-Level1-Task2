@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level 1 - Task 2 | JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a class="brand" href="#home">JS<span>Basics</span></a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#color">Color Button</a>
+        <a href="#calculator">Calculator</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container" id="home">
+    <section class="hero">
+      <div>
+        <p class="tag">LEVEL 1 • TASK 2</p>
+        <h1>Learn JavaScript<br><span>by doing.</span></h1>
+        <p class="lead">Explore three simple JavaScript features: a button that changes color, a greeting based on the current time, and a two-number calculator.</p>
+        <button class="main-button" id="greetingButton" type="button">Show greeting</button>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="screen">
+          <div class="screen-top"><i></i><i></i><i></i></div>
+          <div class="code-line long"></div>
+          <div class="code-line medium"></div>
+          <div class="code-line short"></div>
+          <div class="check">✓</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="color">
+      <div class="panel-number">01</div>
+      <div class="panel-content">
+        <p class="tag">CLICK INTERACTION</p>
+        <h2>Color changing button</h2>
+        <p>Click the button below. JavaScript will change its background color each time you click it.</p>
+        <button id="colorButton" class="color-button" type="button">Click to change my color</button>
+        <p id="colorMessage" class="result" aria-live="polite">Your button is ready!</p>
+      </div>
+    </section>
+
+    <section class="panel" id="greeting">
+      <div class="panel-number">02</div>
+      <div class="panel-content">
+        <p class="tag">TIME-BASED GREETING</p>
+        <h2>Greeting alert</h2>
+        <p>Press the button to see a greeting according to your device's current time.</p>
+        <button id="greetingButtonTwo" class="secondary-button" type="button">Get my greeting</button>
+      </div>
+    </section>
+
+    <section class="panel" id="calculator">
+      <div class="panel-number">03</div>
+      <div class="panel-content">
+        <p class="tag">SIMPLE CALCULATOR</p>
+        <h2>Add two numbers</h2>
+        <p>Enter any two numbers and click Add Numbers to display their sum.</p>
+        <div class="calculator">
+          <label for="numberOne">First number</label>
+          <input id="numberOne" type="number" step="any" placeholder="e.g. 12">
+          <label for="numberTwo">Second number</label>
+          <input id="numberTwo" type="number" step="any" placeholder="e.g. 8">
+          <button id="addButton" class="main-button" type="button">Add numbers</button>
+          <p id="sumResult" class="sum-result" aria-live="polite">Result will appear here.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 JS Basics | Created using HTML, CSS and JavaScript</footer>
+  <script src="script.js"></script>
+</body>
+</html>
